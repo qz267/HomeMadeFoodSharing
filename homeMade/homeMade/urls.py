@@ -1,6 +1,7 @@
 from django.conf.urls import patterns, include, url
-from django.conf.urls.defaults import *
+# from django.conf.urls.defaults import *
 from homeMade.views import hello, current_datetime, hours_ahead
+from homeMade.books import views
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -20,5 +21,8 @@ urlpatterns = patterns('',
     ('^hello/$', hello), 
     ('^time/$', current_datetime),
     (r'^time/plus/(\d{1,2})/$', hours_ahead),
+    (r'^search_form/$', views.search_form),
+    (r'^display_meta/$',views.display_meta),
+    (r'^search/$', views.search),
 
     )
