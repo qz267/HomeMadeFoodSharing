@@ -8,6 +8,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from homeMade import views
 
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -25,8 +26,9 @@ urlpatterns = patterns('',
     ('^time/$', views.current_datetime),
     (r'^time/plus/(\d{1,2})/$', views.hours_ahead),
     # (r'^search_form/$', views.search_form),
-    # (r'^display_meta/$',views.display_meta),
+    (r'^display_meta/$',views.display_meta),
     # (r'^search/$', views.search),
     # (r'^contact/$', views.contact),
+    # (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
     )

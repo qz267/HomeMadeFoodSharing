@@ -90,6 +90,7 @@ TEMPLATE_LOADERS = (
     'django.template.loaders.filesystem.Loader',
     'django.template.loaders.app_directories.Loader',
 #     'django.template.loaders.eggs.Loader',
+    'django.template.loaders.app_directories.load_template_source'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -129,6 +130,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'homeMade.books',
     'south',
+    'django.contrib.sitemaps',
+
 )
 
 # email settings
