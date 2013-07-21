@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     'homeMade.books',
     'south',
     'django.contrib.sitemaps',
+    'polls',
 
 )
 
