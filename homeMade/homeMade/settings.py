@@ -132,7 +132,7 @@ INSTALLED_APPS = (
     'south',
     'django.contrib.sitemaps',
     'polls',
-
+    'Menu',
 )
 
 # email settings
